@@ -1,15 +1,42 @@
+:root {
+  --accent1: #b5fa3d;
+  --accent2: #b0d528;
+  --bg: #fff;
+  --text: #222;
+}
+
+body.dark-mode {
+  --bg: #121212;
+  --text: #eee;
+  --accent1: #ccff66;
+  --accent2: #a4c639;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+.c-button--primary {
+  background-color: var(--accent1);
+  color: #000;
+}
+.c-button--primary:hover {
+  background-color: var(--accent2);
+}
+
 .lightbox-overlay {
   position: fixed;
   top: 0; left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.8);
   display: none;
   justify-content: center;
   align-items: center;
   z-index: 9999;
 }
-
 .lightbox-img {
   max-width: 90%;
   max-height: 80%;

@@ -1,0 +1,8 @@
+title: C0L3
+email: your@email.com
+description: >-
+  2D/3D Digital Artist Portfolio
+show_excerpts: true
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed

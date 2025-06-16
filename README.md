@@ -1,20 +1,17 @@
-# PortfolioTest# Your Name - Artist Portfolio
+# C0L3 - 2D/3D Digital Artist Portfolio
 
-A customizable Jekyll-based portfolio site for artists.
+A fully customizable Jekyll-based portfolio site for C0L3.
 
 ## Features
 
-- Responsive gallery
-- Filter by 2D/3D
+- Responsive layout
 - Dark mode toggle
-- Shopify + Gelato integration
-- Lightbox viewer
-- 3D model rotation
-- Contact & Commissions pages
+- Lightbox image viewer
+- Embedded Shopify Buy Button
+- `<model-viewer>` for 3D models
 
 ## How to Use
 
-1. Replace images in `/images/`
-2. Replace 3D models in `/models/`
-3. Update Shopify credentials in `index.html`
-4. Add more artwork in `_data/artworks.yml`
+1. Clone this repo
+2. Push to GitHub
+3. Enable GitHub Pages
