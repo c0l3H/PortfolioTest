@@ -15,7 +15,10 @@ body.dark-mode {
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0;
 }
 
 .c-button--primary {
@@ -26,18 +29,4 @@ body {
   background-color: var(--accent2);
 }
 
-.lightbox-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-.lightbox-img {
-  max-width: 90%;
-  max-height: 80%;
-}
+/* Add more styling as needed */

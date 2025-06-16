@@ -6,14 +6,14 @@ title: Contact
 # Contact
 
 <form action="#" method="POST">
-  <label>Name:</label>
+  <label>Your Name:</label>
   <input type="text" name="name" required />
 
-  <label>Email:</label>
-  <input type="email" name="email" required />
+  <label>Your Email:</label>
+  <input type="email" name="_replyto" required />
 
   <label>Message:</label>
-  <textarea name="message" required></textarea>
+  <textarea name="text" required></textarea>
 
   <button type="submit">Send Message</button>
 </form>

@@ -5,19 +5,18 @@ title: Projects
 
 <h2>My Artwork</h2>
 
-<div class="filter-buttons">
-  <button onclick="filterCategory('all')">All</button>
-  <button onclick="filterCategory('2D')">2D</button>
-  <button onclick="filterCategory('3D')">3D</button>
-</div>
+<p>Explore some of my recent 2D and 3D creations below:</p>
 
-<div class="gallery" id="gallery">
-  <a href="/project/digital-art" class="art-link">
-    <img src="/images/art1.jpg" alt="Digital Art" />
-    <div class="overlay"><span class="icon">🔍</span></div>
-  </a>
-  <a href="/project/character-model" class="art-link">
-    <img src="/models/example.glb" alt="3D Model" />
-    <div class="overlay"><span class="icon">🔍</span></div>
-  </a>
+<div class="row">
+  <article class="c-project-card col col-4 col-d-6 col-t-12">
+    <div class="c-project-card__content">
+      <a class="c-project-card__image" href="/project/digital-art">
+        <img alt="Digital Illustration" loading="lazy" src="/images/art1.jpg">
+      </a>
+      <div class="c-project-card__info">
+        <h3 class="c-project-card__title">Digital Illustration</h3>
+        <div class="c-project-card__subtitle">2D Art</div>
+      </div>
+    </div>
+  </article>
 </div>
