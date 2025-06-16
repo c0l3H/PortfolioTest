@@ -1,0 +1,61 @@
+---
+layout: default
+title: Home
+---
+
+<h2 id="portfolio">My Artwork</h2>
+
+<div class="filter-buttons">
+  <button onclick="filterCategory('all')">All</button>
+  <button onclick="filterCategory('2D')">2D</button>
+  <button onclick="filterCategory('3D')">3D</button>
+</div>
+
+<div class="gallery" id="gallery">
+  {% for art in site.data.artworks %}
+    {% include artwork-card.html art=art %}
+  {% endfor %}
+</div>
+
+<section id="shop">
+  <h2>Shop - Prints Available via Gelato</h2>
+  <div id='product-component'></div>
+</section>
+
+<!-- Shopify Buy Button SDK -->
+<script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script> 
+<script>
+  (function () {
+    var client = ShopifyBuy.buildClient({
+      domain: 'your-shop.myshopify.com', // ← Replace with your Shopify domain
+      storefrontAccessToken: 'YOUR_ACCESS_TOKEN' // ← Replace with your Storefront API token
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: 'PRODUCT_ID', // ← Replace with your numeric product ID
+        node: document.getElementById('product-component'),
+        options: {
+          product: {
+            styles: {
+              button: {
+                background: '#111',
+                color: '#fff',
+                ':hover': { background: '#333' }
+              }
+            },
+            contents: {
+              img: false,
+              title: false,
+              price: true,
+              button: true
+            },
+            text: {
+              button: 'Add to Cart'
+            }
+          }
+        }
+      });
+    });
+  })();
+</script>

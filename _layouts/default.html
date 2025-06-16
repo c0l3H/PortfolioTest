@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}Your Name</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="/assets/lightbox.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> 
+</head>
+<body class="light-mode">
+
+  <header>
+    <h1><a href="/">Your Name</a></h1>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/commissions.html">Commissions</a>
+      <a href="#shop">Shop</a>
+    </nav>
+  </header>
+
+  {{ content }}
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} Your Name</p>
+  </footer>
+
+  <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+  <div class="lightbox-overlay" id="lightbox">
+    <img src="" alt="Zoomed Image" class="lightbox-img" id="lightbox-img" />
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script> 
+  <script src="/assets/script.js"></script>
+</body>
+</html>
