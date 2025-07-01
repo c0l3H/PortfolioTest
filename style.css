@@ -7,7 +7,7 @@
 }
 
 .homepage .div {
-  background-image: url(/img/homepage.png);
+  background-image: url(img/homepage.png);
   background-size: cover;
   background-position: 50% 50%;
   width: 1440px;
