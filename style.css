@@ -345,3 +345,8 @@
   left: 914px;
   object-fit: cover;
 }
+
+img {
+  position: relative;
+  z-index: 1;
+}
