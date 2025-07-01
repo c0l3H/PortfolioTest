@@ -1,0 +1,426 @@
+.homepage {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.homepage .div {
+  background-image: url(./img/homepage.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 1440px;
+  height: 1024px;
+}
+
+.homepage .main-UI {
+  position: relative;
+  width: 826px;
+  height: 511px;
+  top: 284px;
+  left: 349px;
+}
+
+.homepage .overlap {
+  position: relative;
+  top: -215px;
+  left: -142px;
+  width: 1011px;
+  height: 770px;
+}
+
+.homepage .overlap-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1011px;
+  height: 770px;
+}
+
+.homepage .vector {
+  position: absolute;
+  width: 600px;
+  height: 466px;
+  top: 227px;
+  left: 205px;
+}
+
+.homepage .img {
+  position: absolute;
+  width: 558px;
+  height: 422px;
+  top: 245px;
+  left: 229px;
+}
+
+.homepage .vector-2 {
+  position: absolute;
+  width: 136px;
+  height: 383px;
+  top: 321px;
+  left: 77px;
+}
+
+.homepage .vector-3 {
+  position: absolute;
+  width: 118px;
+  height: 353px;
+  top: 335px;
+  left: 90px;
+}
+
+.homepage .vector-4 {
+  position: absolute;
+  width: 93px;
+  height: 319px;
+  top: 352px;
+  left: 103px;
+}
+
+.homepage .vector-5 {
+  position: absolute;
+  width: 205px;
+  height: 139px;
+  top: 238px;
+  left: 805px;
+}
+
+.homepage .vector-6 {
+  position: absolute;
+  width: 180px;
+  height: 122px;
+  top: 245px;
+  left: 818px;
+}
+
+.homepage .vector-7 {
+  position: absolute;
+  width: 143px;
+  height: 96px;
+  top: 257px;
+  left: 838px;
+}
+
+.homepage .vector-8 {
+  position: absolute;
+  width: 213px;
+  height: 187px;
+  top: 376px;
+  left: 798px;
+}
+
+.homepage .vector-9 {
+  position: absolute;
+  width: 191px;
+  height: 168px;
+  top: 381px;
+  left: 814px;
+}
+
+.homepage .vector-10 {
+  position: absolute;
+  width: 163px;
+  height: 143px;
+  top: 394px;
+  left: 828px;
+}
+
+.homepage .vector-11 {
+  position: absolute;
+  width: 221px;
+  height: 197px;
+  top: 559px;
+  left: 790px;
+}
+
+.homepage .vector-12 {
+  position: absolute;
+  width: 189px;
+  height: 166px;
+  top: 571px;
+  left: 808px;
+}
+
+.homepage .vector-13 {
+  position: absolute;
+  width: 158px;
+  height: 139px;
+  top: 585px;
+  left: 824px;
+}
+
+.homepage .frame {
+  position: absolute;
+  width: 476px;
+  height: 370px;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316146.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .vector-14 {
+  position: absolute;
+  width: 124px;
+  height: 67px;
+  top: 703px;
+  left: 98px;
+}
+
+.homepage .vector-15 {
+  position: absolute;
+  width: 105px;
+  height: 52px;
+  top: 708px;
+  left: 113px;
+}
+
+.homepage .vector-16 {
+  position: absolute;
+  width: 87px;
+  height: 43px;
+  top: 711px;
+  left: 121px;
+}
+
+.homepage .vector-17 {
+  position: absolute;
+  width: 564px;
+  height: 84px;
+  top: 684px;
+  left: 223px;
+}
+
+.homepage .vector-18 {
+  position: absolute;
+  width: 535px;
+  height: 58px;
+  top: 692px;
+  left: 242px;
+}
+
+.homepage .vector-19 {
+  position: absolute;
+  width: 517px;
+  height: 50px;
+  top: 696px;
+  left: 252px;
+}
+
+.homepage .text-wrapper {
+  position: absolute;
+  top: 420px;
+  left: 126px;
+  transform: rotate(-2.04deg);
+  text-shadow: 0px 7px 4px #00000040;
+  font-family: "Micro 5-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.homepage .text-wrapper-2 {
+  position: absolute;
+  top: 488px;
+  left: 128px;
+  transform: rotate(-2.04deg);
+  text-shadow: 0px 5px 4px #00000040;
+  font-family: "Micro 5-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.homepage .text-wrapper-3 {
+  position: absolute;
+  top: 552px;
+  left: 135px;
+  transform: rotate(-2.04deg);
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Micro 5-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.homepage .frame-2 {
+  position: absolute;
+  width: 340px;
+  height: 187px;
+  top: 18px;
+  left: 459px;
+  transform: rotate(2.76deg);
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316147.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .text-wrapper-4 {
+  position: absolute;
+  top: 189px;
+  left: 518px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Micro 5-Regular", Helvetica;
+  font-weight: 400;
+  color: #ff3175;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.homepage .frame-3 {
+  position: absolute;
+  width: 122px;
+  height: 15px;
+  top: 602px;
+  left: 846px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316150.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .frame-4 {
+  position: absolute;
+  width: 122px;
+  height: 15px;
+  top: 620px;
+  left: 846px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316151.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .frame-5 {
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  top: 640px;
+  left: 839px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316152.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .frame-6 {
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  top: 666px;
+  left: 839px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316155.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .frame-7 {
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  top: 666px;
+  left: 883px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316156.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .frame-8 {
+  position: absolute;
+  width: 44px;
+  height: 21px;
+  top: 695px;
+  left: 882px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316158.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .frame-9 {
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  top: 666px;
+  left: 927px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316157.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .frame-10 {
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  top: 640px;
+  left: 882px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316153.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .frame-11 {
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  top: 640px;
+  left: 926px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316154.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.homepage .group-wrapper {
+  position: absolute;
+  width: 531px;
+  height: 189px;
+  top: 438px;
+  left: 250px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.homepage .group-wrapper::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.homepage .group {
+  position: absolute;
+  width: 886px;
+  height: 189px;
+  top: 0;
+  left: 0;
+}
+
+.homepage .frame-12 {
+  position: absolute;
+  width: 96px;
+  height: 25px;
+  top: 202px;
+  left: 914px;
+  box-shadow: 0px 4px 4px #00000040;
+  background-image: url(./img/frame-1321316149.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
