@@ -1,29 +1,25 @@
-.main, .img, .leftside, .right, .bottom, .element, .CV, .carousel {
-  position: absolute;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.carousel {
-  z-index: 999; /* Show on top */
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: transparent;
 }
-
 
 .homepage {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-
-.homepage .div {
-  background-image: url(img/homepage.png);
-  background-size: cover;
-  background-position: 50% 50%;
+  position: relative;
   width: 1440px;
   height: 1024px;
+  margin: 0 auto;
 }
 
-.homepage .main-UI {
+.main-ui {
   position: relative;
   width: 826px;
   height: 511px;
@@ -31,7 +27,7 @@
   left: 349px;
 }
 
-.homepage .overlap {
+.overlap-container {
   position: relative;
   width: 1018px;
   height: 770px;
@@ -39,323 +35,38 @@
   left: -146px;
 }
 
-.homepage .overlap-group {
+.vector,
+.element,
+.stamp,
+.carousel,
+.online-indicator {
   position: absolute;
-  width: 1015px;
-  height: 770px;
-  top: 0;
-  left: 0;
 }
 
-.homepage .main {
-  position: absolute;
-  width: 600px;
-  height: 466px;
-  top: 227px;
-  left: 209px;
-}
+/* Set z-index layers */
+.main-bg         { z-index: 1; }
+.left-side-1     { z-index: 2; }
+.left-side-2     { z-index: 3; }
+.left-side-3     { z-index: 4; }
 
-.homepage .img {
-  position: absolute;
-  width: 558px;
-  height: 422px;
-  top: 245px;
-  left: 233px;
-}
+.right-side-1    { z-index: 5; }
+.right-side-2    { z-index: 6; }
+.right-side-3    { z-index: 7; }
 
-.homepage .leftside {
-  position: absolute;
-  width: 136px;
-  height: 383px;
-  top: 321px;
-  left: 81px;
-}
+.bottom-1        { z-index: 8; }
+.bottom-2        { z-index: 9; }
+.bottom-3        { z-index: 10; }
 
-.homepage .leftside-2 {
-  position: absolute;
-  width: 118px;
-  height: 353px;
-  top: 335px;
-  left: 94px;
-}
+.carousel        { z-index: 11; }
 
-.homepage .leftside-3 {
-  position: absolute;
-  width: 93px;
-  height: 319px;
-  top: 352px;
-  left: 107px;
-}
+.element         { z-index: 12; }
 
-.homepage .right {
-  position: absolute;
-  width: 205px;
-  height: 139px;
-  top: 238px;
-  left: 809px;
-}
+.stamp           { z-index: 13; }
+.online-indicator{ z-index: 14; }
 
-.homepage .right-2 {
-  position: absolute;
-  width: 180px;
-  height: 122px;
-  top: 245px;
-  left: 822px;
-}
-
-.homepage .right-3 {
-  position: absolute;
-  width: 143px;
-  height: 96px;
-  top: 257px;
-  left: 842px;
-}
-
-.homepage .right-4 {
-  position: absolute;
-  width: 213px;
-  height: 187px;
-  top: 376px;
-  left: 802px;
-}
-
-.homepage .right-5 {
-  position: absolute;
-  width: 191px;
-  height: 168px;
-  top: 381px;
-  left: 818px;
-}
-
-.homepage .right-6 {
-  position: absolute;
-  width: 163px;
-  height: 143px;
-  top: 394px;
-  left: 832px;
-}
-
-.homepage .right-7 {
-  position: absolute;
-  width: 221px;
-  height: 197px;
-  top: 559px;
-  left: 794px;
-}
-
-.homepage .right-8 {
-  position: absolute;
-  width: 189px;
-  height: 166px;
-  top: 571px;
-  left: 812px;
-}
-
-.homepage .right-9 {
-  position: absolute;
-  width: 158px;
-  height: 139px;
-  top: 585px;
-  left: 828px;
-}
-
-.homepage .head {
-  position: absolute;
-  width: 484px;
-  height: 378px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-.homepage .leftside-4 {
-  position: absolute;
-  width: 124px;
-  height: 67px;
-  top: 703px;
-  left: 102px;
-}
-
-.homepage .leftside-5 {
-  position: absolute;
-  width: 105px;
-  height: 52px;
-  top: 708px;
-  left: 117px;
-}
-
-.homepage .leftside-6 {
-  position: absolute;
-  width: 87px;
-  height: 43px;
-  top: 711px;
-  left: 125px;
-}
-
-.homepage .bottom {
-  position: absolute;
-  width: 564px;
-  height: 84px;
-  top: 684px;
-  left: 227px;
-}
-
-.homepage .bottom-2 {
-  position: absolute;
-  width: 535px;
-  height: 58px;
-  top: 692px;
-  left: 246px;
-}
-
-.homepage .bottom-3 {
-  position: absolute;
-  width: 517px;
-  height: 50px;
-  top: 696px;
-  left: 256px;
-}
-
-.homepage .element {
-  position: absolute;
-  width: 44px;
-  height: 37px;
-  top: 436px;
-  left: 125px;
-}
-
-.homepage .element-d {
-  position: absolute;
-  width: 44px;
-  height: 35px;
-  top: 503px;
-  left: 128px;
-}
-
-.homepage .CV {
-  position: absolute;
-  width: 39px;
-  height: 34px;
-  top: 567px;
-  left: 135px;
-}
-
-.homepage .COLETHEYTHEM {
-  position: absolute;
-  width: 357px;
-  height: 211px;
-  top: 10px;
-  left: 455px;
-  object-fit: cover;
-}
-
-.homepage .element-ARTIST-AND {
-  position: absolute;
-  width: 275px;
-  height: 25px;
-  top: 198px;
-  left: 518px;
-}
-
-.homepage .stamp-trans {
-  width: 130px;
-  height: 23px;
-  top: 602px;
-  left: 846px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.homepage .stamp-palestine {
-  width: 130px;
-  height: 23px;
-  top: 620px;
-  left: 846px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.homepage .stamp-PC {
-  width: 50px;
-  height: 32px;
-  top: 640px;
-  left: 839px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.homepage .stamp-GAIA {
-  width: 50px;
-  height: 32px;
-  top: 666px;
-  left: 839px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.homepage .stamp-chao {
-  width: 50px;
-  height: 32px;
-  top: 666px;
-  left: 883px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.homepage .stamp-LOTUS {
-  width: 52px;
-  height: 29px;
-  top: 695px;
-  left: 882px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.homepage .stamp-cat {
-  width: 50px;
-  height: 32px;
-  top: 666px;
-  left: 927px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.homepage .stamp-UFO {
-  width: 50px;
-  height: 32px;
-  top: 640px;
-  left: 882px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.homepage .stamp-l {
-  width: 50px;
-  height: 32px;
-  top: 640px;
-  left: 926px;
-  position: absolute;
-  object-fit: cover;
-}
-
-.homepage .carousel {
-  position: absolute;
-  width: 531px;
-  height: 189px;
-  top: 438px;
-  left: 254px;
-}
-
-.homepage .online {
-  position: absolute;
-  width: 104px;
-  height: 33px;
-  top: 202px;
-  left: 914px;
-  object-fit: cover;
-}
-
-img {
-  position: relative;
-  z-index: 1;
+/* Optional: Add debug visibility */
+.vector,
+.element,
+.stamp {
+  opacity: 0.95;
 }
