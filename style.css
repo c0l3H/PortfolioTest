@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +8,9 @@
 body, html {
   width: 100%;
   height: 100%;
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #000;
   overflow: hidden;
-  background-color: transparent;
 }
 
 .homepage {
@@ -17,56 +18,97 @@ body, html {
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .main-ui {
   position: relative;
-  width: 826px;
-  height: 511px;
+  width: 825.52px;
+  height: 511.34px;
   top: 284px;
   left: 349px;
 }
 
-.overlap-container {
-  position: relative;
-  width: 1018px;
-  height: 770px;
-  top: -215px;
-  left: -146px;
-}
-
-.vector,
-.element,
-.stamp,
-.carousel,
-.online-indicator {
+.abstract-shape img,
+.text-elements div,
+.bottom-banner img,
+.artist-text,
+.stamps img,
+.scroll-container .scroll-item img {
   position: absolute;
 }
 
-/* Set z-index layers */
-.main-bg         { z-index: 1; }
-.left-side-1     { z-index: 2; }
-.left-side-2     { z-index: 3; }
-.left-side-3     { z-index: 4; }
+/* Vector Layers */
+.vector1 { z-index: 1; }
+.vector8 { z-index: 2; }
+.vector2 { z-index: 3; }
+.vector9 { z-index: 4; }
+.vector19 { z-index: 5; }
 
-.right-side-1    { z-index: 5; }
-.right-side-2    { z-index: 6; }
-.right-side-3    { z-index: 7; }
+/* Text Elements */
+.text-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.d { z-index: 10; top: 206.77px; left: -17.32px; color: #fff; font-size: 55px; transform: rotate(2deg); }
+.d2 { z-index: 10; top: 274.72px; left: -14.9px; color: #fff; font-size: 55px; transform: rotate(2deg); }
+.cv { z-index: 10; top: 338.5px; left: -7.62px; color: #fff; font-size: 55px; transform: rotate(2deg); }
 
-.bottom-1        { z-index: 8; }
-.bottom-2        { z-index: 9; }
-.bottom-3        { z-index: 10; }
+/* Horizontal Scroll */
+.horizontal-scroll {
+  position: absolute;
+  top: 550px;
+  left: 100px;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
 
-.carousel        { z-index: 11; }
+.scroll-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
 
-.element         { z-index: 12; }
+.scroll-item {
+  min-width: 199px;
+  height: 182px;
+  position: relative;
+}
 
-.stamp           { z-index: 13; }
-.online-indicator{ z-index: 14; }
+/* Bottom Banner */
+.bottom-banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.vector4 { z-index: 1; }
+.vector11 { z-index: 2; }
+.vector15 { z-index: 3; }
 
-/* Optional: Add debug visibility */
-.vector,
-.element,
-.stamp {
-  opacity: 0.95;
+.artist-text {
+  position: absolute;
+  top: -25px;
+  left: 376px;
+  font-size: 32px;
+  color: #ff3175;
+}
+
+/* Stamps */
+.stamps {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.vector3 { z-index: 1; }
+.vector10 { z-index: 2; }
+.vector20 { z-index: 3; }
+
+/* Responsive fallback */
+@media (max-width: 1024px) {
+  .homepage {
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
 }
